@@ -1,0 +1,24 @@
+{
+  "type": "lanes",
+  "width": 1680,
+  "aspect": 2.8,
+  "colors": {
+    "background": "#14213D",
+    "panel": "#223252",
+    "box": "#223252",
+    "border": "#CBBEAD",
+    "line": "#FFFDF8",
+    "text": "#FFFDF8",
+    "muted": "#FFFDF8",
+    "accent": "#A84620",
+    "accentText": "#FFFDF8"
+  },
+  "fonts": { "text": "IBM Plex Sans", "mono": "IBM Plex Mono" },
+  "lanes": [
+    { "label": "Build team" },
+    { "label": "Ship team" }
+  ],
+  "columns": ["Draft", "Release"],
+  "handoff": "Handoff",
+  "emphasis": { "column": 1 }
+}

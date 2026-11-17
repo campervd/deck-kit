@@ -1,0 +1,30 @@
+# Installed by setup.ps1 (npm and the kit-local Python packages): never commit, setup reinstalls them.
+node_modules/
+pylib/
+__pycache__/
+*.pyc
+
+# Build output, Codex session logs and review files: every deck's out\ folder, and any log.
+out/
+*.log
+
+# Scratch and local work.
+scratch/
+.scratch/
+tmp/
+*.tmp
+
+# Test decks that tests\hardening.ps1 creates and removes.
+decks/zz-*/
+
+# Local secrets and editor files, in case anyone adds them.
+.env
+.env.*
+*.pem
+*.key
+*client*secret*.json
+token*.json
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

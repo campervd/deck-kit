@@ -1,0 +1,19 @@
+{
+  "type": "flow",
+  "width": 1680,
+  "colors": {
+    "background": "#E7DED0",
+    "panel": "#FFFDF8",
+    "box": "#FFFDF8",
+    "border": "#CBBEAD",
+    "line": "#14213D",
+    "text": "#14213D",
+    "muted": "#5E697A",
+    "accent": "#A84620",
+    "accentText": "#FFFDF8"
+  },
+  "fonts": { "text": "IBM Plex Sans", "mono": "IBM Plex Mono" },
+  "steps": ["Plan", "Make", "Check"],
+  "loop": "Fix",
+  "emphasis": { "step": 2 }
+}

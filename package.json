@@ -1,0 +1,17 @@
+{
+  "name": "deck-kit",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Write slides as HTML, check them in a real browser, export an editable PowerPoint, and render it back to images.",
+  "scripts": {
+    "build": "node tools/build.mjs"
+  },
+  "dependencies": {
+    "dom-to-pptx": "2.1.2",
+    "puppeteer": "25.17.0"
+  },
+  "overrides": {
+    "image-size": "2.0.4"
+  }
+}

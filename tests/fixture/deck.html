@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .slide { width: 1920px; height: 1080px; position: relative; overflow: hidden; }
+    .slide * { box-sizing: border-box; }
+    .marker { width: 72px; height: 10px; background-color: #A84620; border-radius: 4px; }
+    .meta { font-family: 'IBM Plex Mono'; font-size: 20px; font-weight: 700; line-height: 24px; letter-spacing: 1px; }
+    h1, h2, p { margin: 0; }
+    h1 { font-family: 'Space Grotesk'; font-weight: 700; }
+    .cover { background-color: #14213D; color: #FFFDF8; padding: 120px; }
+    .cover .marker { position: absolute; left: 120px; top: 172px; }
+    .cover .eyebrow { position: absolute; left: 120px; top: 214px; color: #FFFDF8; }
+    .cover h1 { position: absolute; left: 120px; top: 332px; width: 1040px; font-size: 136px; line-height: 1.02; letter-spacing: -4px; }
+    .cover .subtitle { position: absolute; left: 126px; top: 504px; width: 730px; color: #E7DED0; font-family: 'IBM Plex Sans'; font-size: 36px; font-weight: 400; line-height: 1.3; }
+    .cover .title-chip { position: absolute; left: 126px; bottom: 134px; min-width: 430px; padding: 20px 26px; color: #FFFDF8; background-color: #223252; border: 2px solid #CBBEAD; border-radius: 4px; font-family: 'IBM Plex Sans'; font-size: 28px; font-weight: 700; line-height: 36px; }
+    .cover .footer-rule { position: absolute; left: 120px; bottom: 120px; width: 760px; height: 2px; background-color: #A84620; }
+    .dark-system { background-color: #14213D; color: #FFFDF8; }
+    .content-label { position: absolute; left: 120px; top: 120px; color: #FFFDF8; }
+    .dark-system h1, .loop h1 { position: absolute; left: 120px; top: 154px; width: 1500px; font-size: 68px; line-height: 1.08; letter-spacing: -1.8px; }
+    .dark-system .marker { position: absolute; left: 380px; top: 132px; }
+    .dark-system .diagram { position: absolute; left: 120px; top: 300px; display: block; width: 1680px; height: 600px; }
+    .dark-system .caption { position: absolute; left: 120px; top: 916px; color: #E7DED0; font-family: 'IBM Plex Sans'; font-size: 24px; font-weight: 400; line-height: 32px; }
+    .loop { background-color: #E7DED0; color: #14213D; }
+    .loop .content-label { color: #14213D; }
+    .loop .marker { position: absolute; left: 360px; top: 132px; }
+    .loop .diagram { position: absolute; left: 120px; top: 410px; display: block; width: 1680px; height: 264px; }
+    .loop .return-note { position: absolute; left: 120px; top: 760px; width: 1680px; min-height: 120px; border: 2px solid #CBBEAD; border-radius: 4px; padding: 28px 32px; }
+    .loop .return-note .note-label { color: #14213D; font-family: 'IBM Plex Mono'; font-size: 20px; font-weight: 700; line-height: 24px; letter-spacing: 1px; }
+    .loop .return-note .note-text { margin-top: 10px; font-family: 'IBM Plex Sans'; font-size: 30px; font-weight: 400; line-height: 38px; }
+  </style>
+</head>
+<body>
+  <section class="slide cover" data-pattern="cover-ledger">
+    <div class="marker"></div>
+    <p class="eyebrow meta" data-role="meta">TEST DECK</p>
+    <h1>Test deck</h1>
+    <p class="subtitle">A small deck for the kit's hardening tests</p>
+    <div class="title-chip">A small deck for the kit's hardening tests</div>
+    <div class="footer-rule"></div>
+    <template data-pptx-notes>This deck exists only to test the build.</template>
+  </section>
+
+  <section class="slide dark-system" data-pattern="system-dark">
+    <p class="content-label meta" data-role="meta">HANDOFFS</p>
+    <div class="marker"></div>
+    <h1>Two teams hand off in two stages</h1>
+    <img class="diagram" src="diagrams/handoffs.png" alt="Build team and Ship team hand off at Draft and Release" style="width:1680px;height:600px">
+    <p class="caption">The Build team hands each stage to the Ship team.</p>
+    <template data-pptx-notes>The Build team hands each stage to the Ship team.</template>
+  </section>
+
+  <section class="slide loop" data-pattern="contract-ledger">
+    <p class="content-label meta" data-role="meta">THE LOOP</p>
+    <div class="marker"></div>
+    <h1>Plan, make, check, and fix</h1>
+    <img class="diagram" src="diagrams/plan-loop.png" alt="Plan, Make, and Check with Fix looping back to Plan" style="width:1680px;height:264px">
+    <div class="return-note">
+      <p class="note-label" data-role="meta">RETURN LOOP</p>
+      <p class="note-text">When a check fails, the work goes back to the plan.</p>
+    </div>
+    <template data-pptx-notes>When a check fails, the work goes back to the plan.</template>
+  </section>
+</body>
+</html>

@@ -1,0 +1,44 @@
+You are the independent reviewer of this deck. You did not build it, and you don't edit anything: only report.
+
+The images attached to this message are, in order: the quality bar (quality-bar/all.png, a deck at the level of finish every deck must reach; match its level, not its look), the deck's slide sheet (out/html/all.png), every slide at full size (out/html/01.png and on), the browser-vs-PowerPoint sheet (out/compare/all.png), and each separately built diagram (out/diagrams/*.png), if any. You may also read rubric.md, quality-spec.md, layout-guide.md, outline.md, content.md, brief.md and structure.md (if there is one) in this folder. If there is a structure.md, check that the slides follow its slide types, order and rules (or its short version, when the brief asks for fewer slides); mark a slide FIX where they don't. Judge the design only from the images.
+
+If out/critique.md exists, it is the previous review. First re-check each slide it marked FIX: mark it OK only if the problem is gone in the images. Then look at every slide with the same standard as that review: don't raise the bar between reviews, and don't let it slip.
+
+Mark a slide FIX only for a problem a presenter would notice on screen. Taste preferences that would not change how the slide reads are not FIX items.
+
+Look hard. The builder already passed the mechanical checks; your job is what they miss:
+- Empty areas: a band of the slide with nothing in it, a lower half left empty, a card stretched taller than its content. The right fix is larger content or a centered block, not taller boxes.
+- Weak hierarchy: the headline doesn't dominate, or everything has the same weight.
+- Form that doesn't fit the content: a flow, loop or system shown as two plain cards or a list instead of a drawn diagram; a comparison not side by side; steps merged that the content lists separately.
+- Text on a page: a content slide without drawn components, or with only thin rules.
+- Cramped or tiny text, text near box edges, uneven gaps, misaligned edges between slides.
+- Inconsistent roles: the same kind of element styled differently on different slides.
+- PowerPoint differences: rewrapped, clipped or moved text in the comparison.
+
+Review every diagram image (out/diagrams/*.png) at full size against diagram-checklist.md, item by item, and then where it sits on its slide. A diagram is FIX if any item fails: for example a handoff not centered in its slice, unequal lines above and below a handoff, a box without a label, a word that is not in content.md, a diagram stretched or squashed on its slide, or the image overlapping anything else on the slide. diagram-reference.png shows a lane diagram that passes. Diagram faults are easy to pass at a glance; measure by eye against the grid.
+
+Reply in exactly this format and nothing else:
+
+## Slides
+Slide 1: OK or FIX: <what is wrong, where, and the concrete change that fixes it>
+(one line for every slide, in order)
+
+## Diagrams
+Diagram <file name without .png>: OK or FIX: <the checklist items that fail, and the fix>
+(one line for every diagram image attached; write "No diagrams." if there are none)
+
+## Rubric
+1 Hierarchy: <score 1-5> <one sentence of evidence from the images>
+2 Alignment: ...
+3 Space: ...
+4 Consistency: ...
+5 Diagrams: ...
+6 Readability: ...
+7 Restraint: ...
+8 Identity: ...
+9 PowerPoint match: ...
+10 Finish: ...
+11 Fit: <does each slide's form show the shape of its content?>
+
+VERDICT: PASS
+(write PASS only if every rubric line is 4 or 5, no slide is FIX and no diagram is FIX; otherwise write VERDICT: FAIL)

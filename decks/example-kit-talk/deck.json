@@ -1,0 +1,6 @@
+{
+    "brief":  "briefs/example-kit-talk/example-kit-talk-brief.md",
+    "structure":  "standards/structures/tool-walkthrough.md",
+    "content":  "content/example-kit-talk/example-kit-talk-content.md",
+    "design":  "designs/navy-rust/design.md"
+}
